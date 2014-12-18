@@ -38,64 +38,79 @@
             </div>
 
             <div class="main clearfix">
-                <section>
-                    <div class="hall-of-fame">
-                        <figure class="achieve forever-alone">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Forever Alone"
-                               data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>
-                        </figure>
+                <section class="home">
+                    <ul id="horiz_container_outer">
+                        <li id="horiz_container_inner">
+                            <ul id="horiz_container">
+                                <li>
+                                    <div class="hall-of-fame">
+                                        <figure class="achieve forever-alone">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Forever Alone"
+                                               data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>
+                                        </figure>
 
-                        <figure class="achieve ovo-master">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Ovo Master"
-                               data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
-                        </figure>
+                                        <figure class="achieve ovo-master">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Ovo Master"
+                                               data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
+                                        </figure>
 
-                        <figure class="achieve duracell-master">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Duracell Master"
-                               data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
-                        </figure>
+                                        <figure class="achieve duracell-master">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Duracell Master"
+                                               data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
+                                        </figure>
 
-                        <figure class="achieve sheldon-award">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Sheldon Award"
-                               data-content="<?= $app->getPopover("sheldon-award.php") ?>"></a>
-                        </figure>
+                                        <figure class="achieve sheldon-award">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Sheldon Award"
+                                               data-content="<?= $app->getPopover("sheldon-award.php") ?>"></a>
+                                        </figure>
 
-                        <figure class="achieve catdog-award">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Catdog Award"
-                               data-content="<?= $app->getPopover("catdog-award.php") ?>"></a>
-                        </figure>
+                                        <figure class="achieve catdog-award">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Catdog Award"
+                                               data-content="<?= $app->getPopover("catdog-award.php") ?>"></a>
+                                        </figure>
 
-                        <figure class="achieve zombie-award">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Zombie Award"
-                               data-content="<?= $app->getPopover("zombie-award.php") ?>"></a>
-                        </figure>
+                                        <figure class="achieve zombie-award">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Zombie Award"
+                                               data-content="<?= $app->getPopover("zombie-award.php") ?>"></a>
+                                        </figure>
 
-                        <figure class="achieve chuck-norris-award">
-                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                               title="Achievement: Chuck Norris Award"
-                               data-content="<?= $app->getPopover("chuck-norris-award.php") ?>"></a>
-                        </figure>
+                                        <figure class="achieve chuck-norris-award">
+                                            <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
+                                               title="Achievement: Chuck Norris Award"
+                                               data-content="<?= $app->getPopover("chuck-norris-award.php") ?>"></a>
+                                        </figure>
 
-                        <div class="horizontal-scroll black-white">
+                                        <div class="horizontal-scroll black-white">
+                                        </div>
+                                        <div class="horizontal-scroll">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <div id="scrollbar">
+                        <a id="left_scroll" class="mouseover_left" href="#"></a>
+                        <div id="track">
+                            <div id="dragBar"></div>
                         </div>
-                        <div class="horizontal-scroll">
-                        </div>
+                        <a id="right_scroll" class="mouseover_right" href="#"></a>
                     </div>
+
+                    <a href="#down" class="scroll-down"><i class="icon_chevron-circle-down"></i></a>
                 </section>
 
                 <section class="userview">
                     <? $user = "Giorgio Armani"; include($app->getSelfDir()."/templates/card.php") ?>
                     <? $user = "Löli Küderchübel"; include($app->getSelfDir()."/templates/card.php") ?>
-                </section>
-
-                <section>
-
                 </section>
             </div><!-- /main -->
         </div><!-- /st-content-inner -->

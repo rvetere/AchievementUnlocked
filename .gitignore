@@ -1,0 +1,19 @@
+# Can ignore specific files
+.DS_Store
+atlassian-ide-plugin.xml
+
+# Use wildcards as well
+*~
+*.swp
+*.iml
+*.project
+*.classpath
+
+# Can also ignore all directories and files in a directory.
+/target
+/build/**/*
+/bills/*
+/userfiles/*
+/build/publish
+/build/intermediate
+.idea/**/*

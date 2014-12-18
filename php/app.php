@@ -408,10 +408,7 @@ class App
 
         ob_start(); // start output buffering -> nothing will be sent to the client
 
-        // include normal content-php so we are running through the normal code of the current navigate
-        foreach ($this->includes as $key => $value) {
-            include($value);
-        }
+        $app = $this;
 
         foreach ($_POST["users"] as $user) {
             $this->metaData["data"][$user];

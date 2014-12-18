@@ -74,9 +74,9 @@ if ($app->isScriptRequest) {
 
     <? } else { ?>
 
+        <link rel="stylesheet" type="text/css" href="/css/jquery.horizontal.scroll.css" />
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
-        <link rel="stylesheet" type="text/css" href="/css/onepage-scroll.css">
         <link rel="stylesheet" type="text/css" href="/css/icomoon.css">
         <link rel="stylesheet" type="text/css" href="/css/components.css">
         <link rel="stylesheet" type="text/css" href="/css/sidebarEffects.css">
@@ -120,8 +120,8 @@ if ($app->isScriptRequest) {
     <script src="/js/libs/jquery.easing.1.3.js"></script>
     <script src="/js/libs/jquery.transit.js"></script>
     <script src="/js/libs/jquery-ui-1.10.3.custom.js"></script>
-    <script src="/js/mylibs/onepage-scroll.js"></script>
     <script src="/js/mylibs/sidebarEffects.js"></script>
+    <script src="/js/mylibs/jquery.horizontal.scroll.js"></script>
 
     <script src="/js/bootstrap.min.js"></script>
 

@@ -46,7 +46,8 @@ var SidebarMenuEffects = (function() {
         button.addEventListener( eventtype, function( ev ) {
             ev.stopPropagation();
             ev.preventDefault();
-            container.className = 'st-container slide-' + $('section.active').data('index'); // clear
+            var bonus = $('.st-content').scrollTop() == 0 ? 1 : 2;
+            container.className = 'st-container slide-' + bonus; // clear
             $('.st-menu .active').removeClass('active');
             $(container).addClass('st-effect-13');
             setTimeout( function() {
