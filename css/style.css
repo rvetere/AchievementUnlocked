@@ -1,0 +1,188 @@
+*, *:after, *::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.hall-of-fame {
+    width: 100%;
+    height: 100%;
+}
+.show-them .hall-of-fame .horizontal-scroll:not(.black-white) {
+    opacity: 0;
+}
+.hall-of-fame .horizontal-scroll {
+    width: 2800px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/img/hall_of_fame.png');
+    background-position: 0px -50px;
+    transition: all 800ms ease-in-out;
+}
+.hall-of-fame .horizontal-scroll.black-white {
+    background-image: url('/img/hall_of_fame_sw.png');
+}
+
+.achieve:hover .popover {
+    display: block;
+}
+.popover {
+    display: none;
+}
+
+a.invisible:focus {
+    outline: 0;
+}
+a.invisible {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.popover {
+    min-width: 300px;
+}
+
+.card {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    background-image: url('/img/userview.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.user {
+    transform: rotateZ(-90deg);
+    transform-origin: 0% 50%;
+    position: absolute;
+    top: 740px;
+    left: 75px;
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-weight: bold;
+    color: #08f;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.avatar {
+    position: absolute;
+    bottom: 137px;
+    left: 55px;
+}
+
+#menu-1,
+#menu-2 {
+    display: none;
+}
+
+.slide-1 #menu-1 {
+    display: block;
+}
+.slide-2 #menu-2 {
+    display: block;
+}
+
+/* badges */
+.achieve:hover {
+    opacity: 1;
+}
+.achieve {
+    position: absolute;
+    opacity: 0;
+    z-index: 3000;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.achieve.forever-alone {
+    background-image: url('/img/foreveralone.png');
+    width: 482px;
+    height: 623px;
+    top: -50px;
+    left: 367px;
+}
+.achieve.duracell-master {
+    background-image: url('/img/dbunny.png');
+    width: 274px;
+    height: 334px;
+    bottom: -45px;
+    left: 280px;
+}
+.achieve.ovo-master {
+
+}
+.achieve.sheldon-award {
+
+}
+.achieve.catdog-award {
+    background-image: url('/img/catdog.png');
+    width: 526px;
+    height: 275px;
+    bottom: 132px;
+    left: 1760px;
+}
+.achieve.zombie-award {
+
+}
+.achieve.chuck-norris-award {
+    background-image: url('/img/chucknorris.png');
+    width: 219px;
+    height: 246px;
+    top: 63px;
+    left: 1823px;
+}
+
+/* navigation */
+.home-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 30px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 200;
+}
+.section-navi {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.section-navi li {
+    float: left;
+}
+.section-navi a {
+    padding: 16px 10px;
+    display: inline-block;
+    text-transform: lowercase;
+    margin: 20px 0;
+    text-shadow: 1px 1px 5px rgba(88,88,88,0.35);
+}
+.section-navi i {
+    vertical-align: middle;
+}
+.home-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+.home-nav a:hover {
+    color: #5bc0de;
+}
+
+
+/* Animations */
+.section.drop-out .card {
+    transform: rotateX(90deg);
+}
