@@ -20,8 +20,8 @@ a:hover, a:focus {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('/img/hall_of_fame_farbig.jpg');
-    background-position: 0px -50px;
+    background-image: url('/img/hall_of_fame.png');
+    background-position: 0 0;
     transition: all 800ms ease-in-out;
 }
 .hall-of-fame .horizontal-scroll.black-white {
@@ -65,7 +65,7 @@ a.invisible {
     transform: rotateZ(-90deg);
     transform-origin: 0% 50%;
     position: absolute;
-    top: 740px;
+    bottom: 180px;
     left: 75px;
     font-family: 'Open Sans';
     font-size: 32px;
@@ -75,13 +75,17 @@ a.invisible {
 }
 .avatar {
     position: absolute;
-    top: 797px;
+    bottom: 137px;
     left: 55px;
 }
 
 #menu-1,
 #menu-2 {
     display: none;
+}
+
+figure.achieve.is-active {
+    opacity: 1;
 }
 
 .slide-1 #menu-1 {
@@ -92,7 +96,8 @@ a.invisible {
 }
 
 /* badges */
-.achieve:hover {
+.achieve:hover,
+.achieve.isActive {
     opacity: 1;
 }
 .achieve {
@@ -108,37 +113,49 @@ a.invisible {
     background-image: url('/img/foreveralone.png');
     width: 482px;
     height: 623px;
-    top: -50px;
+    top: -81px;
     left: 367px;
 }
 .achieve.duracell-master {
     background-image: url('/img/dbunny.png');
     width: 274px;
     height: 334px;
-    bottom: -45px;
+    bottom: -15px;
     left: 280px;
 }
 .achieve.ovo-master {
-
+    background-image: url('/img/ovo.png');
+    width: 221px;
+    height: 242px;
+    bottom: 100px;
+    left: 931px;
 }
 .achieve.sheldon-award {
-
+    background-image: url('/img/sheldon.png');
+    width: 103px;
+    height: 257px;
+    left: 1137px;
+    top: 214px;
 }
 .achieve.catdog-award {
     background-image: url('/img/catdog.png');
     width: 526px;
     height: 275px;
-    bottom: 132px;
+    bottom: 161px;
     left: 1760px;
 }
 .achieve.zombie-award {
-
+    background-image: url('/img/zombie.png');
+    width: 393px;
+    height: 596px;
+    left: 2229px;
+    top: -81px;
 }
 .achieve.chuck-norris-award {
     background-image: url('/img/chucknorris.png');
     width: 219px;
     height: 246px;
-    top: 63px;
+    top: 32px;
     left: 1823px;
 }
 
@@ -194,6 +211,6 @@ section.userview {
 }
 
 /* Animations */
-.section.drop-out .card {
+section.drop-out .card {
     transform: rotateX(90deg);
 }

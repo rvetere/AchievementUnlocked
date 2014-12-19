@@ -74,11 +74,11 @@ $(function() {
                     console.log('WTF?!');
                 },
                 success: function(data) {
-                    $('section').addClass('drop-out');
+                    $('section.userview').addClass('drop-out');
                     setTimeout(function() {
-                        $('section.active').html(data['html']);
+                        $('section.userview').html(data['html']);
                         setTimeout(function() {
-                            $('section').removeClass('drop-out');
+                            $('section.userview').removeClass('drop-out');
                         }, 25);
                     }, 500);
                 },

@@ -44,7 +44,7 @@
                             <ul id="horiz_container">
                                 <li>
                                     <div class="hall-of-fame">
-                                        <figure class="achieve forever-alone">
+                                        <figure class="achieve forever-alone is-active">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Achievement: Forever Alone"
                                                data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>
@@ -70,13 +70,13 @@
 
                                         <figure class="achieve catdog-award">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Catdog Award"
+                                               title="Achievement: Catdog Award" data-placement="left"
                                                data-content="<?= $app->getPopover("catdog-award.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve zombie-award">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Zombie Award"
+                                               title="Achievement: Zombie Award" data-placement="left"
                                                data-content="<?= $app->getPopover("zombie-award.php") ?>"></a>
                                         </figure>
 
