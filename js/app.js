@@ -11,6 +11,78 @@
 var app = app || new Object();
 window.app = app;
 
+var users = [
+    'chdvajo0',
+    'chdrepa0',
+    'bymshpa0',
+    'bymnini0',
+    'bymanol0',
+    'chdvere0',
+    'chdhasy0',
+    'chdscmr0',
+    'bymprdm0',
+    'bymgovl0',
+    'chdmedo0',
+    'bymbrva0',
+    'chdfagu0',
+    'chdmema0',
+    'chdboal0',
+    'chdbrdo0',
+    'chdwapa0',
+    'chdhaju0',
+    'chdbhsa0',
+    'bymkadm0',
+    'chdmaal0',
+    'chdgane0',
+    'chdjolo0',
+    'chdgrgi0',
+    'chdfrdo0'
+];
+
+var randomize = function(e) {
+    e.preventDefault();
+
+    var first = users[getRandomInt(0, 25)];
+    while (first == null) {
+        first = users[getRandomInt(0, 25)];
+    }
+    var second = users[getRandomInt(0, 25)];
+    while (second == null) {
+        second = users[getRandomInt(0, 25)];
+    }
+    while (second == first) {
+        second = users[getRandomInt(0, 25)];
+    }
+
+
+    $.ajax({
+        type: "POST",
+        url: '/load/cards',
+        data: {
+            'users': [first, second]
+        },
+        error: function() {
+            console.log('WTF?!');
+        },
+        success: function(data) {
+            $('section.userview').addClass('drop-out');
+            setTimeout(function() {
+                $('section.userview').html(data['html'] + '<a href="#random" class="randomize"><i class="icon_chevron-circle-right"></i></a>');
+                $('.randomize')
+                    .unbind('click')
+                    .bind('click', randomize);
+                setTimeout(function() {
+                    $('section.userview').removeClass('drop-out');
+                    $('.achievement .invisible').popover({
+                        'html': true
+                    });
+                }, 25);
+            }, 500);
+        },
+        dataType: 'json'
+    });
+};
+
 // Let's get the party started!
 $(function() {
 //    $('ul.nav a').bind('click',function(event){
@@ -80,7 +152,10 @@ $(function() {
                 success: function(data) {
                     $('section.userview').addClass('drop-out');
                     setTimeout(function() {
-                        $('section.userview').html(data['html']);
+                        $('section.userview').html(data['html'] + '<a href="#random" class="randomize"><i class="icon_chevron-circle-right"></i></a>');
+                        $('.randomize')
+                            .unbind('click')
+                            .bind('click', randomize);
                         setTimeout(function() {
                             $('section.userview').removeClass('drop-out');
                             $('.achievement .invisible').popover({
@@ -114,4 +189,6 @@ $(function() {
     $('.scroll-down-down').bind('click', function(e) {
         $('.st-content').animate({ scrollTop: $('section.userview').height() + $('section.over').height()}, 'slow');
     });
+
+    $('.randomize').bind('click', randomize);
 });

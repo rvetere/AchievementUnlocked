@@ -395,6 +395,20 @@ class App
     public function getPopover($pop) {
         ob_start(); // start output buffering -> nothing will be sent to the client
 
+        $app = $this;
+        include($this->getSelfDir()."/popover/".$pop);
+
+        $html = ob_get_contents(); // get the output as a string
+        ob_end_clean(); // silently close
+
+        return str_replace('"', "'", $html);
+    }
+
+
+    public function getPopoverAchiv($pop, $user) {
+        ob_start(); // start output buffering -> nothing will be sent to the client
+
+        $app = $this;
         include($this->getSelfDir()."/popover/".$pop);
 
         $html = ob_get_contents(); // get the output as a string
@@ -409,6 +423,10 @@ class App
         ob_start(); // start output buffering -> nothing will be sent to the client
 
         $app = $this;
+        $dir = $this->getSelfDir(true) . "/data/";
+        $path = $dir . "meta.json";
+        $string = file_get_contents($path);
+        $app->metaData = json_decode($string, true);
 
         foreach ($_POST["users"] as $user) {
             $this->metaData["data"][$user];
@@ -424,28 +442,31 @@ class App
     }
 
     public function isHallOfFameActive($type) {
-        switch ($type) {
-            case "forever-alone":
-                return "is-active";
+        $hasIt = false;
+        foreach ($this->metaData as $data) {
+            foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
+                if ($key == $type) {
+                    $hasIt = true;
+                    break;
+                }
+            }
         }
 
-        return "";
+        return $hasIt ? "is-active" : "";
     }
 
     public function isAchievementActive($type, $user) {
-        $data = $this->metaData["data"][$user];
+        $hasIt = false;
+        $data = $this->metaData[$user];
 
-        if (!isset($data)) {
-            $data = array(
-                "forever-alone" => true
-            );
+        foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
+            if ($key == $type) {
+                $hasIt = true;
+                break;
+            }
         }
 
-        if (isset($data[$type]) && $data[$type] === true) {
-            return "isActive";
-        }
-
-        return "";
+        return $hasIt ? "isActive" : "";
     }
 
 }

@@ -1,5 +1,15 @@
 <?
-
+    $app->metaData;
+    $list = "";
+    foreach ($app->metaData as $data) {
+        foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
+            if ($key == "forever") {
+                $date = new DateTime();
+                $date->setTimestamp(strtotime($leDate));
+                $list .= "<tr><td>".date_format($date, "d.m.y")."</td><td>".$data["name"]."</td></tr>";
+            }
+        }
+    }
 ?>
 
 <p class="green-text">
@@ -14,21 +24,6 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>01.01.2013</td>
-            <td>Remo Vetere</td>
-        </tr>
-        <tr>
-            <td>01.01.2013</td>
-            <td>Remo Vetere</td>
-        </tr>
-        <tr>
-            <td>01.01.2013</td>
-            <td>Remo Vetere</td>
-        </tr>
-        <tr>
-            <td>01.01.2013</td>
-            <td>Remo Vetere</td>
-        </tr>
+        <?= $list ?>
     </tbody>
 </table>

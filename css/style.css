@@ -75,6 +75,10 @@ a.invisible {
     color: #FFFFFF;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
     opacity: 0.8;
+    max-width: 351px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .avatar {
     position: absolute;
@@ -357,4 +361,12 @@ section.drop-out .card {
     padding: 15px;
     margin: 0 0 10px 0;
     border-radius: 2px;
+}
+
+a.randomize {
+    font-size: 54px;
+    position: absolute;
+    top: 600px;
+    right: 40px;
+    color: #a4c300;
 }

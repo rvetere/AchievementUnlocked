@@ -8,16 +8,39 @@
     these menus will be on top of the push wrapper
 -->
 <nav class="st-menu st-effect-13" id="menu-1">
-    <h2 class="icon icon-stack">Sidebar</h2>
+    <h2 class="icon icon-stack">Menu</h2>
     <ul>
         <li><a href="#1">Home</a></li>
     </ul>
 </nav>
 <nav class="st-menu st-effect-13" id="menu-2">
-    <h2 class="icon icon-stack">Sidebar</h2>
+    <h2 class="icon icon-stack">Compare!</h2>
     <ul>
-        <li><a class="compare" href="#">Remo Vetere</a></li>
-        <li><a class="compare" href="#">Sybille Hausherr</a></li>
+        <li><a class="compare" href="#">chdvajo0</a></li>
+        <li><a class="compare" href="#">chdrepa0</a></li>
+        <li><a class="compare" href="#">bymshpa0</a></li>
+        <li><a class="compare" href="#">bymnini0</a></li>
+        <li><a class="compare" href="#">bymanol0</a></li>
+        <li><a class="compare" href="#">chdvere0</a></li>
+        <li><a class="compare" href="#">chdhasy0</a></li>
+        <li><a class="compare" href="#">chdscmr0</a></li>
+        <li><a class="compare" href="#">bymprdm0</a></li>
+        <li><a class="compare" href="#">bymgovl0</a></li>
+        <li><a class="compare" href="#">chdmedo0</a></li>
+        <li><a class="compare" href="#">bymbrva0</a></li>
+        <li><a class="compare" href="#">chdfagu0</a></li>
+        <li><a class="compare" href="#">chdmema0</a></li>
+        <li><a class="compare" href="#">chdboal0</a></li>
+        <li><a class="compare" href="#">chdbrdo0</a></li>
+        <li><a class="compare" href="#">chdwapa0</a></li>
+        <li><a class="compare" href="#">chdhaju0</a></li>
+        <li><a class="compare" href="#">chdbhsa0</a></li>
+        <li><a class="compare" href="#">bymkadm0</a></li>
+        <li><a class="compare" href="#">chdmaal0</a></li>
+        <li><a class="compare" href="#">chdgane0</a></li>
+        <li><a class="compare" href="#">chdjolo0</a></li>
+        <li><a class="compare" href="#">chdgrgi0</a></li>
+        <li><a class="compare" href="#">chdfrdo0</a></li>
     </ul>
 </nav>
 
@@ -50,37 +73,37 @@
                                                data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve ovo-master">
+                                        <figure class="achieve ovo-master <?= $app->isHallOfFameActive("ovo-master") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Ovo Master"
                                                data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve duracell-master">
+                                        <figure class="achieve duracell-master <?= $app->isHallOfFameActive("duracell-master") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Duracell Master"
                                                data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve sheldon-award">
+                                        <figure class="achieve sheldon-award <?= $app->isHallOfFameActive("sheldon-award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Sheldon Award"
                                                data-content="<?= $app->getPopover("sheldon-award.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve catdog-award">
+                                        <figure class="achieve catdog-award <?= $app->isHallOfFameActive("catdog-award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Catdog Award" data-placement="left"
                                                data-content="<?= $app->getPopover("catdog-award.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve zombie-award">
+                                        <figure class="achieve zombie-award <?= $app->isHallOfFameActive("zombie-award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Zombie Award" data-placement="left"
                                                data-content="<?= $app->getPopover("zombie-award.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve chuck-norris-award">
+                                        <figure class="achieve chuck-norris-award <?= $app->isHallOfFameActive("chuck-norris-award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Chuck Norris Award"
                                                data-content="<?= $app->getPopover("chuck-norris-award.php") ?>"></a>
@@ -114,8 +137,10 @@
                 </section>
 
                 <section class="userview">
-                    <? $user = "Giorgio Armani"; include($app->getSelfDir()."/templates/card.php") ?>
-                    <? $user = "Löli Küderchübel"; include($app->getSelfDir()."/templates/card.php") ?>
+                    <a href="#random" class="randomize"><i class="icon_chevron-circle-right"></i></a>
+
+                    <? $user = "chdvajo0"; include($app->getSelfDir()."/templates/card.php") ?>
+                    <? $user = "chdbrdo0"; include($app->getSelfDir()."/templates/card.php") ?>
                     <br style="clear: both;">
                 </section>
             </div><!-- /main -->
