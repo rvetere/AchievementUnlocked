@@ -48,6 +48,10 @@ $(function() {
         'html': true
     });
 
+    $('.achievement .invisible').popover({
+        'html': true
+    });
+
     $('.st-menu .compare').bind('click', function(e) {
         e.preventDefault;
 
@@ -79,6 +83,9 @@ $(function() {
                         $('section.userview').html(data['html']);
                         setTimeout(function() {
                             $('section.userview').removeClass('drop-out');
+                            $('.achievement .invisible').popover({
+                                'html': true
+                            });
                         }, 25);
                     }, 500);
                 },

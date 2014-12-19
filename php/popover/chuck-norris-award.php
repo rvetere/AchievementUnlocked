@@ -2,8 +2,8 @@
 
 ?>
 
-<p class="text-center alert-info">
-    <strong>Most created Tasks which are assigned to themselves.</strong>
+<p class="text-center">
+    Most created Tasks which are assigned to themselves.
 </p>
 
 <table class="table table-striped">

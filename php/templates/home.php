@@ -44,7 +44,7 @@
                             <ul id="horiz_container">
                                 <li>
                                     <div class="hall-of-fame">
-                                        <figure class="achieve forever-alone is-active">
+                                        <figure class="achieve forever-alone <?= $app->isHallOfFameActive("forever-alone") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Achievement: Forever Alone"
                                                data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>

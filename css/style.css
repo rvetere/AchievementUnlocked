@@ -57,7 +57,7 @@ a.invisible {
     float: left;
     position: relative;
     transition: all 500ms ease-in-out;
-    background-image: url('/img/userview.jpg');
+    background-image: url('/img/userview.png');
     background-repeat: no-repeat;
     background-position: bottom left;
 }
@@ -75,7 +75,7 @@ a.invisible {
 }
 .avatar {
     position: absolute;
-    bottom: 137px;
+    bottom: 104px;
     left: 55px;
 }
 
@@ -159,6 +159,107 @@ figure.achieve.is-active {
     left: 1823px;
 }
 
+figure.achievement {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+figure.achievement:hover,
+figure.achievement.isActive {
+    opacity: 1;
+}
+
+figure.achievement.forever-alone {
+    background: url('/img/user_foreveralone.png');
+    width: 81px;
+    height: 145px;
+    top: 510px;
+    left: 244px;
+}
+
+figure.achievement.roundhouse {
+    background: url('/img/user_roundhouse.png');
+    width: 136px;
+    height: 132px;
+    top: 522px;
+    left: 365px;
+}
+
+figure.achievement.ovo {
+    background: url('/img/user_ovo.png');
+    width: 92px;
+    height: 122px;
+    top: 531px;
+    left: 540px;
+}
+
+figure.achievement.duracell {
+    background: url('/img/user_dbunny.png');
+    width: 110px;
+    height: 150px;
+    top: 502px;
+    left: 678px;
+}
+
+figure.achievement.necromancer {
+    background: url('/img/user_necro.png');
+    width: 143px;
+    height: 151px;
+    top: 667px;
+    left: 208px;
+}
+
+figure.achievement.penny {
+    background: url('/img/user_penny.png');
+    width: 66px;
+    height: 143px;
+    top: 675px;
+    left: 400px;
+}
+
+figure.achievement.raj {
+    background: url('/img/user_raj.png');
+    width: 66px;
+    height: 142px;
+    top: 676px;
+    left: 551px;
+}
+
+figure.achievement.tumbleweed {
+    background: url('/img/user_tumbleweed.png');
+    width: 137px;
+    height: 129px;
+    top: 687px;
+    left: 667px;
+}
+
+figure.achievement.dog {
+    background: url('/img/user_dog.png');
+    width: 100px;
+    height: 151px;
+    top: 832px;
+    left: 238px;
+}
+
+figure.achievement.cat {
+    background: url('/img/user_cat.png');
+    width: 159px;
+    height: 137px;
+    top: 842px;
+    left: 392px;
+}
+
+figure.achievement.labday-winner {
+    background: url('/img/user_labdaywinner.png');
+    width: 147px;
+    height: 145px;
+    top: 833px;
+    left: 551px;
+}
+
 /* navigation */
 .home-nav {
     position: fixed;
@@ -208,6 +309,10 @@ a.scroll-down {
 }
 section.userview {
     height: 105vh;
+}
+
+.popover-title {
+    font-size: 16px !important;
 }
 
 /* Animations */

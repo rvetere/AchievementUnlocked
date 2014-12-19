@@ -423,4 +423,29 @@ class App
         );
     }
 
+    public function isHallOfFameActive($type) {
+        switch ($type) {
+            case "forever-alone":
+                return "is-active";
+        }
+
+        return "";
+    }
+
+    public function isAchievementActive($type, $user) {
+        $data = $this->metaData["data"][$user];
+
+        if (!isset($data)) {
+            $data = array(
+                "forever-alone" => true
+            );
+        }
+
+        if (isset($data[$type]) && $data[$type] === true) {
+            return "isActive";
+        }
+
+        return "";
+    }
+
 }
