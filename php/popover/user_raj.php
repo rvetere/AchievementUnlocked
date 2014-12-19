@@ -15,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    The most line of code per week
+    The most lines of code per week
 </p>
 
 <table class="table table-striped">

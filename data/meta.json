@@ -2100,20 +2100,60 @@
             "Julian Hanhart": "1285891200"
         }
     ],
-    "Duracell Master": "",
-    "Forever Alone": [
-        {
-            "Alex Boner": "1322784000"
-        },
-        {
-            "Marc Schulthess": "1320364800"
-        },
+    "Duracell Master": [
         {
             "Julian Hanhart": "1285891200"
         }
     ],
-    "Sheldon Award": "",
-    "Cat&Dog Award": "",
-    "Zombie Award": "",
+    "Forever Alone": [
+        {
+            "Julian Hanhart": "1388534400"
+        },
+        {
+            "Jonas van Essen": "1404172800"
+        }
+    ],
+    "Sheldon Award": [
+        {
+            "Remo Vetere": "1392249600"
+        },
+        {
+            "Marc Schulthess": "1353542400"
+        },
+        {
+            "Patrik Walter": "1368662400"
+        }
+    ],
+    "Cat&Dog Award": [],
+    "Zombie Award": [
+        {
+            "Jonas van Essen": "1336003200"
+        },
+        {
+            "Patrick Renda": "1345680000"
+        },
+        {
+            "Remo Vetere": "1391040000"
+        },
+        {
+            "Sybille Hausherr": "1358985600"
+        },
+        {
+            "Marc Schulthess": "1332979200"
+        },
+        {
+            "Markus Meier": "1311206400"
+        },
+        {
+            "Patrik Walter": "1376524800"
+        },
+        {
+            "Julian Hanhart": "1319068800"
+        },
+        {
+            "Lobsang Jordhen": "1401321600"
+        }
+    ],
     "Chuck Norris Award": []
-}}
+}
+}

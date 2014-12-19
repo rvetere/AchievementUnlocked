@@ -15,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    The smallest value, when divided the time between the first and the last daily commits with the lines of code per day
+    Smallest amount of lines of Code compared to the amount of commits
 </p>
 
 <table class="table table-striped">

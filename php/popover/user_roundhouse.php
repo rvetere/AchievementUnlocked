@@ -15,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    ...
+    Most commits per month
 </p>
 
 <table class="table table-striped">

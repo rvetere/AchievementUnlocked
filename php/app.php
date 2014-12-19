@@ -489,12 +489,12 @@ class App
             foreach ($leDate as $leEntry) {
                 $date = new DateTime();
                 $date->setTimestamp(strtotime($leEntry));
-                $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+                $list .= "<tr><td>Received on</td><td>".date_format($date, "d.m.y")."</td></tr>";
             }
         } else {
             $date = new DateTime();
             $date->setTimestamp(strtotime($leDate));
-            $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+            $list .= "<tr><td>Received on</td><td>".date_format($date, "d.m.y")."</td></tr>";
         }
 
         return $list;

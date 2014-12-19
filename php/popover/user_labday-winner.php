@@ -15,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    You won the lab-day.. once.. or something
+    You won the lab-day.. once..
 </p>
 
 <table class="table table-striped">
