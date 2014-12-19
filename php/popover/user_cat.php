@@ -5,9 +5,7 @@ $data = $app->metaData[$user];
 
 foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
     if ($key == "cat") {
-        $date = new DateTime();
-        $date->setTimestamp(strtotime($leDate));
-        $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+        $list = $app->parseDate($leDate, $list);
     }
 }
 
@@ -17,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    Most created Tasks which are assigned to themselves.
+    The most commits after 18:00 pm
 </p>
 
 <table class="table table-striped">

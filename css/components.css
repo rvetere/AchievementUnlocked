@@ -97,6 +97,8 @@ body,
     margin: 0;
     padding: 0;
     list-style: none;
+    height: calc(100% - 87px);
+    overflow: scroll;
 }
 
 .st-menu h2 {
@@ -565,4 +567,10 @@ body,
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
     padding-left: 300px;
+}
+
+
+
+a.compare.active {
+    background: rgba(188, 88, 88, .8);
 }

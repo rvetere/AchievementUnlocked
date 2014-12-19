@@ -5,9 +5,7 @@ $data = $app->metaData[$user];
 
 foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
     if ($key == "ovo") {
-        $date = new DateTime();
-        $date->setTimestamp(strtotime($leDate));
-        $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+        $list = $app->parseDate($leDate, $list);
     }
 }
 
@@ -17,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    Most created Tasks which are assigned to themselves.
+    The smallest value, when divided the time between the first and the last daily commits with the lines of code per day
 </p>
 
 <table class="table table-striped">

@@ -138,7 +138,7 @@ $(function() {
             };
             $('.card').each(function(i, el) {
                 var userEl = $('.st-menu .active:eq(' + i + ')');
-                var user = userEl.html();
+                var user = userEl.data('kurzel');
                 data.users.push(user);
             });
 
@@ -191,4 +191,21 @@ $(function() {
     });
 
     $('.randomize').bind('click', randomize);
+
+    $('.card').espy(function (entered, state) {
+        if (entered) {
+            // element entered the viewport
+            // state === 'inside'
+            console.log('wuhuuu entered');
+        } else {
+            // element left the viewport
+            if (state === 'up') {
+                // element is now above the trigger area
+                console.log('left, above');
+            } else if (state === 'down') {
+                // element is now below the trigger area
+                console.log('left, down');
+            }
+        }
+    });
 });

@@ -5,9 +5,7 @@ $data = $app->metaData[$user];
 
 foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
     if ($key == "tumbleweed") {
-        $date = new DateTime();
-        $date->setTimestamp(strtotime($leDate));
-        $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+        $list = $app->parseDate($leDate, $list);
     }
 }
 
@@ -17,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    Most created Tasks which are assigned to themselves.
+    Create a ticket, who is ignored by all the people for one week
 </p>
 
 <table class="table table-striped">

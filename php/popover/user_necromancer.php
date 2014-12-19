@@ -5,9 +5,7 @@ $data = $app->metaData[$user];
 
 foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
     if ($key == "necromancer") {
-        $date = new DateTime();
-        $date->setTimestamp(strtotime($leDate));
-        $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+        $list = $app->parseDate($leDate, $list);
     }
 }
 

@@ -16,31 +16,9 @@
 <nav class="st-menu st-effect-13" id="menu-2">
     <h2 class="icon icon-stack">Compare!</h2>
     <ul>
-        <li><a class="compare" href="#">chdvajo0</a></li>
-        <li><a class="compare" href="#">chdrepa0</a></li>
-        <li><a class="compare" href="#">bymshpa0</a></li>
-        <li><a class="compare" href="#">bymnini0</a></li>
-        <li><a class="compare" href="#">bymanol0</a></li>
-        <li><a class="compare" href="#">chdvere0</a></li>
-        <li><a class="compare" href="#">chdhasy0</a></li>
-        <li><a class="compare" href="#">chdscmr0</a></li>
-        <li><a class="compare" href="#">bymprdm0</a></li>
-        <li><a class="compare" href="#">bymgovl0</a></li>
-        <li><a class="compare" href="#">chdmedo0</a></li>
-        <li><a class="compare" href="#">bymbrva0</a></li>
-        <li><a class="compare" href="#">chdfagu0</a></li>
-        <li><a class="compare" href="#">chdmema0</a></li>
-        <li><a class="compare" href="#">chdboal0</a></li>
-        <li><a class="compare" href="#">chdbrdo0</a></li>
-        <li><a class="compare" href="#">chdwapa0</a></li>
-        <li><a class="compare" href="#">chdhaju0</a></li>
-        <li><a class="compare" href="#">chdbhsa0</a></li>
-        <li><a class="compare" href="#">bymkadm0</a></li>
-        <li><a class="compare" href="#">chdmaal0</a></li>
-        <li><a class="compare" href="#">chdgane0</a></li>
-        <li><a class="compare" href="#">chdjolo0</a></li>
-        <li><a class="compare" href="#">chdgrgi0</a></li>
-        <li><a class="compare" href="#">chdfrdo0</a></li>
+        <? foreach ($app->metaData as $kurzel => $data) { ?>
+        <li><a class="compare" href="#" data-kurzel="<?= $kurzel ?>"><?= $data["name"] ?></a></li>
+        <? } ?>
     </ul>
 </nav>
 
@@ -54,11 +32,6 @@
     <div class="st-content"><!-- this is the wrapper for the content -->
         <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
             <!-- Top Navigation -->
-            <div class="home-nav">
-                <ul class="section-navi">
-                    <li><a id="showMenu" href="#menu" class="main-menu"><i class="icon_list4"></i>&nbsp;Menu</a></li>
-                </ul>
-            </div>
 
             <div class="main clearfix">
                 <section class="home">
@@ -67,43 +40,43 @@
                             <ul id="horiz_container">
                                 <li>
                                     <div class="hall-of-fame">
-                                        <figure class="achieve forever-alone <?= $app->isHallOfFameActive("forever-alone") ?>">
+                                        <figure class="achieve forever-alone <?= $app->isHallOfFameActive("Forever Alone") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Forever Alone"
                                                data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve ovo-master <?= $app->isHallOfFameActive("ovo-master") ?>">
+                                        <figure class="achieve ovo-master <?= $app->isHallOfFameActive("OVO Master") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Ovo Master"
                                                data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve duracell-master <?= $app->isHallOfFameActive("duracell-master") ?>">
+                                        <figure class="achieve duracell-master <?= $app->isHallOfFameActive("Duracell Master") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Duracell Master"
-                                               data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
+                                               data-content="<?= $app->getPopover("duracell-master.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve sheldon-award <?= $app->isHallOfFameActive("sheldon-award") ?>">
+                                        <figure class="achieve sheldon-award <?= $app->isHallOfFameActive("Sheldon Award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Sheldon Award"
                                                data-content="<?= $app->getPopover("sheldon-award.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve catdog-award <?= $app->isHallOfFameActive("catdog-award") ?>">
+                                        <figure class="achieve catdog-award <?= $app->isHallOfFameActive("Cat&Dog Award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Catdog Award" data-placement="left"
                                                data-content="<?= $app->getPopover("catdog-award.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve zombie-award <?= $app->isHallOfFameActive("zombie-award") ?>">
+                                        <figure class="achieve zombie-award <?= $app->isHallOfFameActive("Zombie Award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Zombie Award" data-placement="left"
                                                data-content="<?= $app->getPopover("zombie-award.php") ?>"></a>
                                         </figure>
 
-                                        <figure class="achieve chuck-norris-award <?= $app->isHallOfFameActive("chuck-norris-award") ?>">
+                                        <figure class="achieve chuck-norris-award <?= $app->isHallOfFameActive("Chuck Norris Award") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                                                title="Chuck Norris Award"
                                                data-content="<?= $app->getPopover("chuck-norris-award.php") ?>"></a>
@@ -134,6 +107,12 @@
                 <section class="over">
                     <div class="overview"></div>
                     <a href="#down" class="scroll-down-down"><i class="icon_chevron-circle-down"></i></a>
+
+                    <div class="home-nav">
+                        <ul class="section-navi">
+                            <li><a id="showMenu" href="#menu" class="main-menu"><i class="icon_list4"></i>&nbsp;compare</a></li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section class="userview">

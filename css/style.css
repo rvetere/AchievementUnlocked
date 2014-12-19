@@ -269,8 +269,8 @@ figure.achievement.labday-winner {
 
 /* navigation */
 .home-nav {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    bottom: 40px;
     left: 0;
     padding: 0 30px;
     width: 100%;
@@ -369,4 +369,8 @@ a.randomize {
     top: 600px;
     right: 40px;
     color: #a4c300;
+}
+
+.popover {
+    z-index: 9999 !important;
 }

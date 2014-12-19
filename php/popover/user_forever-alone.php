@@ -4,10 +4,8 @@ $list = "";
 $data = $app->metaData[$user];
 
 foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
-    if ($key == "forever") {
-        $date = new DateTime();
-        $date->setTimestamp(strtotime($leDate));
-        $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+    if ($key == "forever-alone") {
+        $list = $app->parseDate($leDate, $list);
     }
 }
 
@@ -17,7 +15,7 @@ if ($list == "") {
 ?>
 
 <p class="green-text">
-    Most created Tasks which are assigned to themselves.
+    You create a task, who is assigned to yourself and closed by yourself
 </p>
 
 <table class="table table-striped">

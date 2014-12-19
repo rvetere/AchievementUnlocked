@@ -60,7 +60,7 @@ $leData = $app->metaData[$user];
                    data-content="<?= $app->getPopoverAchiv("user_tumbleweed.php", $user) ?>"></a>
             </figure>
 
-            <figure class="achievement dog <?= $app->isAchievementActive("dog", $user) ?>">
+            <figure class="achievement dog <?= $app->isAchievementActive("gery", $user) ?>">
                 <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
                    title="Dog" data-placement="right"
                    data-content="<?= $app->getPopoverAchiv("user_dog.php", $user) ?>"></a>

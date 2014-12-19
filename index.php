@@ -122,6 +122,7 @@ if ($app->isScriptRequest) {
     <script src="/js/libs/jquery-ui-1.10.3.custom.js"></script>
     <script src="/js/mylibs/sidebarEffects.js"></script>
     <script src="/js/mylibs/jquery.horizontal.scroll.js"></script>
+    <script src="/js/mylibs/jquery.espy.js"></script>
 
     <script src="/js/bootstrap.min.js"></script>
 

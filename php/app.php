@@ -443,12 +443,15 @@ class App
 
     public function isHallOfFameActive($type) {
         $hasIt = false;
-        foreach ($this->metaData as $data) {
-            foreach (isset($data["awards"]) ? $data["awards"] : array() as $key => $leDate) {
-                if ($key == $type) {
-                    $hasIt = true;
-                    break;
+        foreach ($this->metaData["hall_of_fame"] as $key => $data) {
+            if ($key == $type) {
+                foreach (is_array($data) ? $data : array() as $idx => $leDate) {
+                    foreach ($leDate as $name => $unixTstamp) {
+                        $hasIt = true;
+                        break;
+                    }
                 }
+
             }
         }
 
@@ -467,6 +470,34 @@ class App
         }
 
         return $hasIt ? "isActive" : "";
+    }
+
+    public function getFirstDate($leDate) {
+        $result = $leDate["1"];
+        if (!isset($result)) {
+            foreach ($leDate as $key => $value) {
+                $result = $value;
+                break;
+            }
+        }
+
+        return $result;
+    }
+
+    public function parseDate($leDate, $list) {
+        if (is_array($leDate)) {
+            foreach ($leDate as $leEntry) {
+                $date = new DateTime();
+                $date->setTimestamp(strtotime($leEntry));
+                $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+            }
+        } else {
+            $date = new DateTime();
+            $date->setTimestamp(strtotime($leDate));
+            $list .= "<tr><td>Received at</td><td>".date_format($date, "d.m.y")."</td></tr>";
+        }
+
+        return $list;
     }
 
 }
