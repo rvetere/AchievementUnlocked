@@ -2,7 +2,7 @@
 
 ?>
 
-<p class="text-center">
+<p class="green-text">
     Most created Tasks which are assigned to themselves.
 </p>
 

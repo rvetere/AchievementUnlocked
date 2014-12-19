@@ -1,7 +1,88 @@
-{
-    "data": [{
-        "user": {
-            "name": "Remo Vetere"
-        }
-    }]
-}
+{"chdvajo0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdvajo0&avatarId=12106",
+    "name": "Jonas van Essen"
+}, "chdrepa0": {
+    "awards": {
+        "labday": "2"
+    },
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdrepa0&avatarId=12110",
+    "name": "Patrick Renda"
+}, "bymshpa0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymshpa0&avatarId=11690",
+    "name": "Pavel Shchehelskiy"
+}, "bymnini0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymnini0&avatarId=11890",
+    "name": "Nickolai Nikishin"
+}, "bymanol0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymanol0&avatarId=11790",
+    "name": "Olga Anfilova"
+}, "chdvere0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdvere0&avatarId=12104",
+    "name": "Remo Vetere"
+}, "chdhasy0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdhasy0&avatarId=12103",
+    "name": "Sybille Hausherr"
+}, "chdscmr0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdscmr0&avatarId=12105",
+    "name": "Marc Schulthess"
+}, "bymprdm0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymprdm0&avatarId=11595",
+    "name": "Dmitry Protasevich"
+}, "bymgovl0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymgovl0&avatarId=11491",
+    "name": "Vladimir Gorshunov"
+}, "chdmedo0": {
+    "awards": {
+        "labday": "1"
+    },
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdmedo0&avatarId=12100",
+    "name": "Dominik Meister"
+}, "bymbrva0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymbrva0&avatarId=11592",
+    "name": "Varvara Brzezinska"
+}, "chdfagu0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?avatarId=10212",
+    "name": "Guendalina Fazioli"
+}, "chdmema0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdmema0&avatarId=11691",
+    "name": "Markus Meier"
+}, "chdboal0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdboal0&avatarId=11201",
+    "name": "Alex Boner"
+}, "chdbrdo0": {
+    "awards": {
+        "labday": "1"
+    },
+    "avatar": "https://jira.netstream.ch/secure/useravatar?avatarId=10212",
+    "name": "Dominik Breitenmoser"
+}, "chdwapa0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdwapa0&avatarId=12101",
+    "name": "Patrik Walter"
+}, "chdhaju0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdhaju0&avatarId=11896",
+    "name": "Julian Hanhart"
+}, "chdbhsa0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdbhsa0&avatarId=10993",
+    "name": "Sasha Bhattacharya"
+}, "bymkadm0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=bymkadm0&avatarId=11591",
+    "name": "Dmitry Kadushkevich"
+}, "chdmaal0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?avatarId=10212",
+    "name": "Aleksandra Smiljic"
+}, "chdgane0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdgane0&avatarId=12108",
+    "name": "Neirouz Garhe"
+}, "chdjolo0": {
+    "awards": {
+        "labday": "1"
+    },
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdjolo0&avatarId=12102",
+    "name": "Lobsang Jordhen"
+}, "chdgrgi0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdgrgi0&avatarId=12111",
+    "name": "Giuliano Grassi"
+}, "chdfrdo0": {
+    "avatar": "https://jira.netstream.ch/secure/useravatar?ownerId=chdfrdo0&avatarId=10990",
+    "name": "Dominik Friederich"
+}}

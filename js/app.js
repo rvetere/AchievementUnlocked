@@ -109,6 +109,9 @@ $(function() {
     $('#horiz_container_outer').horizontalScroll();
 
     $('.scroll-down').bind('click', function(e) {
-        $('.st-content').animate({ scrollTop: $('section.userview').height()}, 'slow');
-    })
+        $('.st-content').animate({ scrollTop: $('section.over').height()}, 'slow');
+    });
+    $('.scroll-down-down').bind('click', function(e) {
+        $('.st-content').animate({ scrollTop: $('section.userview').height() + $('section.over').height()}, 'slow');
+    });
 });

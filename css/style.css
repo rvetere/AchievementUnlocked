@@ -52,26 +52,29 @@ a.invisible {
 }
 
 .card {
-    width: 50%;
-    height: 100%;
+    width: 900px;
+    height: 549px;
     float: left;
     position: relative;
     transition: all 500ms ease-in-out;
     background-image: url('/img/userview.png');
     background-repeat: no-repeat;
     background-position: bottom left;
+    margin: 0 0 10px 40px;
+    margin-top: 30px;
 }
 .user {
     transform: rotateZ(-90deg);
     transform-origin: 0% 50%;
     position: absolute;
-    bottom: 180px;
-    left: 75px;
+    bottom: 160px;
+    left: 80px;
     font-family: 'Open Sans';
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    color: #08f;
+    color: #FFFFFF;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    opacity: 0.8;
 }
 .avatar {
     position: absolute;
@@ -120,14 +123,14 @@ figure.achieve.is-active {
     background-image: url('/img/dbunny.png');
     width: 274px;
     height: 334px;
-    bottom: -15px;
+    bottom: -18px;
     left: 280px;
 }
 .achieve.ovo-master {
     background-image: url('/img/ovo.png');
     width: 221px;
     height: 242px;
-    bottom: 100px;
+    bottom: 96px;
     left: 931px;
 }
 .achieve.sheldon-award {
@@ -141,7 +144,7 @@ figure.achieve.is-active {
     background-image: url('/img/catdog.png');
     width: 526px;
     height: 275px;
-    bottom: 161px;
+    bottom: 157px;
     left: 1760px;
 }
 .achieve.zombie-award {
@@ -176,7 +179,7 @@ figure.achievement.forever-alone {
     background: url('/img/user_foreveralone.png');
     width: 81px;
     height: 145px;
-    top: 510px;
+    top: 24px;
     left: 244px;
 }
 
@@ -184,7 +187,7 @@ figure.achievement.roundhouse {
     background: url('/img/user_roundhouse.png');
     width: 136px;
     height: 132px;
-    top: 522px;
+    top: 36px;
     left: 365px;
 }
 
@@ -192,7 +195,7 @@ figure.achievement.ovo {
     background: url('/img/user_ovo.png');
     width: 92px;
     height: 122px;
-    top: 531px;
+    top: 45px;
     left: 540px;
 }
 
@@ -200,7 +203,7 @@ figure.achievement.duracell {
     background: url('/img/user_dbunny.png');
     width: 110px;
     height: 150px;
-    top: 502px;
+    top: 16px;
     left: 678px;
 }
 
@@ -208,7 +211,7 @@ figure.achievement.necromancer {
     background: url('/img/user_necro.png');
     width: 143px;
     height: 151px;
-    top: 667px;
+    top: 180px;
     left: 208px;
 }
 
@@ -216,7 +219,7 @@ figure.achievement.penny {
     background: url('/img/user_penny.png');
     width: 66px;
     height: 143px;
-    top: 675px;
+    top: 189px;
     left: 400px;
 }
 
@@ -224,7 +227,7 @@ figure.achievement.raj {
     background: url('/img/user_raj.png');
     width: 66px;
     height: 142px;
-    top: 676px;
+    top: 190px;
     left: 551px;
 }
 
@@ -232,7 +235,7 @@ figure.achievement.tumbleweed {
     background: url('/img/user_tumbleweed.png');
     width: 137px;
     height: 129px;
-    top: 687px;
+    top: 201px;
     left: 667px;
 }
 
@@ -240,7 +243,7 @@ figure.achievement.dog {
     background: url('/img/user_dog.png');
     width: 100px;
     height: 151px;
-    top: 832px;
+    top: 346px;
     left: 238px;
 }
 
@@ -248,7 +251,7 @@ figure.achievement.cat {
     background: url('/img/user_cat.png');
     width: 159px;
     height: 137px;
-    top: 842px;
+    top: 356px;
     left: 392px;
 }
 
@@ -256,7 +259,7 @@ figure.achievement.labday-winner {
     background: url('/img/user_labdaywinner.png');
     width: 147px;
     height: 145px;
-    top: 833px;
+    top: 347px;
     left: 551px;
 }
 
@@ -299,7 +302,12 @@ figure.achievement.labday-winner {
     color: #5bc0de;
 }
 
-a.scroll-down {
+a.scroll-down-down {
+    color: #1280C3 !important;
+    top: 770px !important;
+}
+a.scroll-down,
+a.scroll-down-down {
     position: absolute;
     top: 890px;
     right: 70px;
@@ -307,8 +315,20 @@ a.scroll-down {
     color: white;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
+section.over .overview {
+    background: url('/img/stats.png');
+    width: 1920px;
+    height: 680px;
+    margin-top: 10%;
+}
+section.userview {
+    padding-top: 0px;
+    height: 989px !important;
+}
+section.over,
 section.userview {
     height: 105vh;
+    position: relative;
 }
 
 .popover-title {
@@ -318,4 +338,23 @@ section.userview {
 /* Animations */
 section.drop-out .card {
     transform: rotateX(90deg);
+}
+
+
+.popover-content {
+    padding: 0 15px 5px 15px !important;
+}
+.popover-title {
+    padding: 15px !important;
+    color: #A4C300 !important;
+    font-size: 28px !important;
+    background: none !important;
+    border-bottom: 0 !important;
+}
+
+.green-text {
+    background: #f7f7f7;
+    padding: 15px;
+    margin: 0 0 10px 0;
+    border-radius: 2px;
 }

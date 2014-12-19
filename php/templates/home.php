@@ -46,43 +46,43 @@
                                     <div class="hall-of-fame">
                                         <figure class="achieve forever-alone <?= $app->isHallOfFameActive("forever-alone") ?>">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Forever Alone"
+                                               title="Forever Alone"
                                                data-content="<?= $app->getPopover("forever-alone.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve ovo-master">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Ovo Master"
+                                               title="Ovo Master"
                                                data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve duracell-master">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Duracell Master"
+                                               title="Duracell Master"
                                                data-content="<?= $app->getPopover("ovo-master.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve sheldon-award">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Sheldon Award"
+                                               title="Sheldon Award"
                                                data-content="<?= $app->getPopover("sheldon-award.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve catdog-award">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Catdog Award" data-placement="left"
+                                               title="Catdog Award" data-placement="left"
                                                data-content="<?= $app->getPopover("catdog-award.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve zombie-award">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Zombie Award" data-placement="left"
+                                               title="Zombie Award" data-placement="left"
                                                data-content="<?= $app->getPopover("zombie-award.php") ?>"></a>
                                         </figure>
 
                                         <figure class="achieve chuck-norris-award">
                                             <a href="#" tabindex="0" class="invisible" role="button" data-toggle="popover" data-trigger="focus"
-                                               title="Achievement: Chuck Norris Award"
+                                               title="Chuck Norris Award"
                                                data-content="<?= $app->getPopover("chuck-norris-award.php") ?>"></a>
                                         </figure>
 
@@ -108,9 +108,15 @@
                     <a href="#down" class="scroll-down"><i class="icon_chevron-circle-down"></i></a>
                 </section>
 
+                <section class="over">
+                    <div class="overview"></div>
+                    <a href="#down" class="scroll-down-down"><i class="icon_chevron-circle-down"></i></a>
+                </section>
+
                 <section class="userview">
                     <? $user = "Giorgio Armani"; include($app->getSelfDir()."/templates/card.php") ?>
                     <? $user = "Löli Küderchübel"; include($app->getSelfDir()."/templates/card.php") ?>
+                    <br style="clear: both;">
                 </section>
             </div><!-- /main -->
         </div><!-- /st-content-inner -->

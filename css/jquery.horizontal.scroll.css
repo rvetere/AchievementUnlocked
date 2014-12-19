@@ -126,6 +126,10 @@ background-image: -moz-linear-gradient(
 	cursor:pointer;
 }
 
+#second_scroll {
+
+}
+
 /* Prevent selection problem */
 #scrollbar, #track, #dragBar, #left, #right {
     -moz-user-select: none;
